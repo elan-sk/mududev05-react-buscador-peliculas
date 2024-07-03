@@ -39,12 +39,14 @@ function App() {
       <header>
         <h1>Buscador de películas</h1>
         <form className='form' onSubmit={handleSubmit}>
+          <div className='alphabetical'>
           <input style={{
             border: '1px solid transparent',
             borderColor: error ? 'red' : 'transparent'
           }} onChange={handleChange} value={search} name='query' placeholder='Avengers, Start Wars, The Matrix ...' />
+            <input type='checkbox' onChange={handleSort} checked={sort} /> Orden alfabético
+          </div>
           <button type='submit'>Buscar</button>
-          <input type='checkbox' onChange={handleSort} checked={sort} />
         </form>
         {error &&
           <p style={{color: 'red'}}> {error}</p >

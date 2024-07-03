@@ -23,7 +23,13 @@ form {
   align-items: center;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   margin-bottom: 50px;
+}
+
+.alphabetical {
+  display: block;
+  text-align: left;
 }
 
 .movies {
@@ -51,4 +57,3 @@ form {
 .movie img {
   border-radius: 8px;
 }
- 
